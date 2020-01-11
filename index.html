@@ -1,0 +1,106 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link rel="stylesheet" href="assets/css/bootstrap.css" ></link>
+    <link rel="stylesheet" href="assets/css/style.css" ></link>
+    <title> Simple evaulator</title>
+  </head>
+
+  <body>
+
+      <br>
+
+        <div class='custom_container'>
+          <!-- title bar - has date, time, questions tally -->
+              <div class='row container' id='titlebar'>
+                  <h1 class='menubar_item' class='col'> time <span id='timer'></span> </h1>
+              </div>
+
+              <div class='container' id='start-parent'>
+
+                  <h1> Welcome to Daily test Tracker </h1>
+
+                  <form>
+                      <input required type='text' id='testName' placeholder="Test Name" class="row customInput">
+                      <input required type='number' id='testTime' placeholder="Duration of Test (in minutes)" class='row customInput'>
+                      <input required type='number' id='testNumberOfQuestions' placeholder="Number of Questions" class='row customInput'>
+                      <select required placeholder="Marking Scheme" class='row customInput' id='testMarkingScheme'>
+                      </select>
+                      <a id='StartTestButton' class='btn btn-primary' class='row customInput'> Start Test </a>
+                  </form>
+
+              </div>
+
+              <div id='test-parent' class='row'>
+
+                  <div class='question_segment col'>
+                      
+                      <h1 centered='true' class='menubar_item'> QUESTION <span id="questionNumber">#</span> </h1>
+
+                      <br>
+
+                      <div id='options'>
+                          <span class='radioWrapper'><input class='custom_radio' type='radio' id='A' name='answer' value='A'>
+                            A 
+                          </input></span>
+                          <br>
+                          <span class='radioWrapper'><input class='custom_radio' type='radio' id='B' name='answer' value='B'>
+                            B 
+                          </input></span>
+                          <br>
+                          <span class='radioWrapper'><input class='custom_radio' type='radio' id='C' name='answer' value='C'>
+                            C
+                          </input></span>
+                          <br>
+                          <span class='radioWrapper'><input class='custom_radio' type='radio' id='D' name='answer' value='D'>
+                            D
+                          </input></span>
+                          <br>
+                      </div>
+
+                      <br>
+                      
+                      <div>
+                          <button  id='PrevQ' class='btn btn-primary standard-button'> Previous </button>
+                          <button class='btn btn-primary standard-button' onclick='clearChoices();' > Clear Choice</button>
+                          <button class='btn btn-primary standard-button' id='MarkForEval'> mark for evalution </button>
+                          <button class='btn btn-primary standard-button' id='NextQ' > Next </button>
+                      </div>
+
+                  </div>
+
+                  <div class='question_overview col'>
+
+                      <h1> Questions Overview </h1>
+
+                      <br>
+                      
+                      <div id='QuestionList' class='grid-container'>
+                          <p> No Questions Yet! </p>
+                      </div>
+
+                      <br>
+
+                      <div>
+                          <button class='btn btn-success' id='SubmitTest'> Submit  </button>
+                          <button class='btn btn-danger' id='ExitTest'> Exit </button>
+                      </div>
+
+                  </div>
+
+              </div>
+
+              <div id='answer-parent'>
+                  <h1 class='mx-auto my-auto'> Your Score is <span id='finalScore'>being calculated</span> </h1>
+              </div>
+
+        </div>
+
+    </body>
+    <script type='application/javascript' src='assets/js/database.js'></script>
+    <script type='application/javascript' src='assets/js/app.js'></script>
+</html>

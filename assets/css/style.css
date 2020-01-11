@@ -1,0 +1,78 @@
+body{
+}
+
+#answerChoices{
+    display: flex;
+    flex-direction: column;
+}
+
+.question_segment{
+    padding: 5%;
+    margin: 5%;
+    width: 100%;
+}
+
+.question_overview{
+    padding: 3%;
+    margin: 5%;
+    width: 100%;
+}
+
+.question_jumpbutton{
+    padding: 1%;
+    background-color: lightgrey;
+}
+
+.question_jumpbutton :hover{
+    pointer-events: none;
+
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(30px, 1fr));
+    grid-gap: 3px;
+}
+
+#options{
+    margin: 10%;
+    display: flex;
+    flex-direction: inline-grid;
+}
+
+
+.standard-button{
+    margin: 8px;
+}
+
+.customInput{
+    margin: 1%;
+    padding: 1%;
+    width: 100%;
+}
+
+.custom_container{
+    width: 90%;
+}
+
+#test-parent{
+}
+
+.menubar_item{
+    margin: auto;
+    padding: 1px;
+}
+
+.optionText{
+    color: black;
+    padding: 5px;
+    margin: 5px;
+}
+
+.radioWrapper{
+    border: 1px solid red;
+    padding: 10%;
+    margin: auto;
+    width: 50%;
+
+}
