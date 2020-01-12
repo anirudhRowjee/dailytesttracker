@@ -4,12 +4,14 @@ A Simple HTML, CSS and Vanilla JS Computer-based test simulator. Does not
 require internet to run.
 This allows you to - 
 
-
 * [x] choose the number of questions you solve
 * [x] set a time limit
 * [x] get marks instantly
+* [ ] Store Test Data and get Statistics
 
-and currently supports two marking schemes -
+(un-ticked checkboxes are features not yet implemented.)
+
+Daily Test Tracker currently supports two marking schemes -
 * JEE Mains (+4, -1)
 * KCET (+1,0)
 
@@ -30,5 +32,9 @@ for example,
 your score will be evaulated based on this. ALL questions must be included and
 must have **_only a single space_** between each.
 
-Enjoy!
+## Usage Instructions
+
+1. Download/clone the repository to your computer.
+2. navigate to the folder you have downloaded the files to.
+3. Double-click/open `index.html` and you're ready to go!
 
